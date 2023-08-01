@@ -1,27 +1,19 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import React from 'react';
 
-export default function Header() {
+const Navbar = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        {/*Inside the IconButton, we can render various icons*/}
-        <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-          {/*This is a simple Menu Icon wrapped in Icon */}
-          <MenuIcon />
-        </IconButton>
-        {/* The Typography component applies default font weights and sizes */}
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          GeeksforGeeks Header
-        </Typography>
-        <Button color="inherit">Login</Button>
-      </Toolbar>
-    </AppBar>
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-white text-2xl font-bold">My App</h1>
+        <ul className="flex space-x-4">
+          <li><a href="#" className="text-white hover:text-gray-300">Home</a></li>
+          <li><a href="#" className="text-white hover:text-gray-300">About</a></li>
+          <li><a href="#" className="text-white hover:text-gray-300">Services</a></li>
+          <li><a href="#" className="text-white hover:text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   );
-}
+};
+
+export default Navbar;

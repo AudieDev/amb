@@ -1,0 +1,64 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add your custom styles here */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Style the navbar */
+nav {
+  background-color: #1a202c;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Style the header */
+header {
+  background-color: #2d3748;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Style the calculator input fields */
+input[type='number'] {
+  border: 1px solid white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Style the submit button */
+button {
+  background-color: #4a5568;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2d3748;
+}
