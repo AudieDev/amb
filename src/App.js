@@ -1,13 +1,18 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Calculator from './Calculator';
+import FrontPage from './FrontPage';
+import ContactForm from './ContactForm';
+import './styles.css'; 
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-      {/* Other components and content */}
+    <div className="bg-black min-h-screen flex items-center justify-center">
+      <Calculator />
+      <FrontPage />
+      <ContactForm />
     </div>
   );
-};
+}
 
 export default App;
+
